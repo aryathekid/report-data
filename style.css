@@ -1,0 +1,19 @@
+footer {
+  background-color: rgb(35, 34, 34);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+section form {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}

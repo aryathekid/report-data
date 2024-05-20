@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html style="width: 100%; background-color: black; height: 120%;">
+
+<head>
+  <title>INPUT DATA KE SPREAD SHEET</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  <script src="data.js"></script>
+  <style>
+    @media (max-width: 768px) {
+      .form-container {
+        padding: 10px;
+      }
+      .form-container input,
+      .form-container select,
+      .form-container textarea {
+        width: 100% !important;
+      }
+      .form-container .row .col-12 {
+        margin-bottom: 10px;
+      }
+    }
+    .camera {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .camera video {
+      width: 100%;
+      max-width: 300px;
+    }
+  </style>
+</head>
+
+<body style="background-color: rgb(35, 34, 34);">
+  <nav id="home" class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(35, 34, 34);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="logo-smk4.png" alt="Logo" style="height: 50px; width: 50px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home" style="color: white;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#form" style="color: white;">Form</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <h1 style="padding-top: 10px; text-align: center; color: white;">Selamat Datang <p>Bpk. Budi </p></h1>
+
+  <section id="form" style="background-color: black; height: 100%; background-image: url('forest-4996811_1280.jpg'); background-repeat: no-repeat; background-size: cover;">
+    <div class="container form-container">
+      <form action="https://script.google.com/macros/s/AKfycbwU-baGo-8AlHUoeQzlqCjWKybq_92NysiB_qjaT-T9qa1psBdDAGZ10BBCB-TIPlYr/exec" method="post" enctype="multipart/form-data" style="height: 120%;">
+        <h1 style="text-align: center; padding-bottom: 20px; padding-top: 20px;">Form</h1>
+        <div class="mb-3">
+          <label for="no" class="form-label" style="color: white;">Nomor</label>
+          <input type="number" class="form-control" id="no" name="no" required>
+        </div>
+        <div class="mb-3">
+          <label for="nama" class="form-label" style="color: white;">Nama Kegiatan</label>
+          <input type="text" class="form-control" id="nama" name="nama" required>
+        </div>
+        <div class="mb-3">
+          <label for="jenis" class="form-label" style="color: white;">Pilih Jenis Kegiatan</label>
+          <select class="form-select" id="jenis" name="jenis" required>
+            <option></option>
+            <option value="kbm">KBM</option>
+            <option value="nonkbm">Non KBM</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="tgl_kgt" class="form-label" style="color: white;">Tanggal</label>
+          <input type="date" class="form-control" id="tgl_kgt" name="tgl_kgt" required>
+        </div>
+        <div class="mb-3">
+          <label for="uraian" class="form-label" style="color: white;">Uraian Kegiatan</label>
+          <textarea class="form-control" id="uraian" name="uraian" rows="4" required></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="target" class="form-label" style="color: white;">Target Capaian</label>
+          <textarea class="form-control" id="target" name="target" rows="4" required></textarea>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <input type="submit" value="Simpan Data" class="btn btn-success w-100">
+          </div>
+          <div class="col-12 col-md-6" style="margin-bottom: 80px;">
+            <input type="file" class="form-control bg-warning w-100"
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer style="text-align: center; padding: 5px; color: white;">
+    <p>Copyright @Arya & Ridho & Rabil 2024 inc</p>
+  </footer>
+</body>
+
+</html>
